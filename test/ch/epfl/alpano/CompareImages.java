@@ -16,8 +16,8 @@ public class CompareImages {
 
 		PanoramaParameters PARAMS = PredefinedPanoramas.NIESEN.panoramaParameters();
 
-		BufferedImage theirs = ImageIO.read(new File("TestRessources/louis_niesen.png"));
-		BufferedImage ours = ImageIO.read(new File("TestOutput/niesen-gray-profile.png"));
+		BufferedImage theirs = ImageIO.read(new File("testRessources/louis_niesen.png"));
+		BufferedImage ours = ImageIO.read(new File("testOutput/niesen-gray-profile.png"));
 
 		int wrong = 0, good = 0;
 		for (int x = 0; x < PARAMS.width(); x++){

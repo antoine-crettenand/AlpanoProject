@@ -40,7 +40,7 @@ public class PanoramaComputerBean {
 
 		List<Summit> summitList = null;
 		try {
-			summitList = GazetteerParser.readSummitsFrom(new File("alps.txt"));
+			summitList = GazetteerParser.readSummitsFrom(new File("ressources/alps.txt"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

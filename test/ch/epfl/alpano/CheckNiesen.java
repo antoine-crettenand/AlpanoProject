@@ -18,7 +18,7 @@ import java.io.File;
 import static java.lang.Math.toRadians;
 
 public final class CheckNiesen {
-	final static File HGT_FILE = new File("N46E007.hgt");
+	final static File HGT_FILE = new File("ressources/N46E007.hgt");
 
 	final static int IMAGE_WIDTH = 500;
 	final static int IMAGE_HEIGHT = 200;
@@ -55,7 +55,7 @@ public final class CheckNiesen {
 			ImageIO.write(SwingFXUtils.fromFXImage(i, null), "png",
 					new File("niesen-profile.png"));
 
-			BufferedImage img = ImageIO.read(new File("TestRessources/niesen-profile-prof.png"));
+			BufferedImage img = ImageIO.read(new File("test/testRessources/niesen-profile-prof.png"));
 			BufferedImage target = SwingFXUtils.fromFXImage(i, null);
 
 			for (int x = 0; x < IMAGE_WIDTH; ++x) {

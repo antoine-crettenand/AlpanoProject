@@ -251,7 +251,8 @@ public final class Alpano extends Application {
 		for (int i = 6; i < 10; i++) {
 			DiscreteElevationModel column = null;
 			for (int j = 45; j < 47; j++) {
-				DiscreteElevationModel dem = new HgtDiscreteElevationModel(new File("N" + j + "E" + "00" + i + ".hgt"));
+				DiscreteElevationModel dem = new HgtDiscreteElevationModel(new File("ressources/N" + j + "E" + "00" +
+						i +	".hgt"));
 				column = (column == null ? dem : column.union(dem));
 			}
 			model = (model == null ? column : model.union(column));

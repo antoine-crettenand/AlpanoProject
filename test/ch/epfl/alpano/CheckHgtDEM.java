@@ -13,7 +13,7 @@ import static java.lang.Math.*;
 import static org.junit.Assert.assertEquals;
 
 public class CheckHgtDEM {
-	final static File HGT_FILE = new File("N46E006.hgt");
+	final static File HGT_FILE = new File("ressources/N46E006.hgt");
 	final static double ORIGIN_LON = toRadians(6.25);
 	final static double ORIGIN_LAT = toRadians(46.25);
 	final static double WIDTH = toRadians(0.5);
@@ -27,7 +27,7 @@ public class CheckHgtDEM {
 	}
 
 	@Test public void checkHgtDem() throws Exception {
-		BufferedImage i = ImageIO.read(new File("TestRessources/dem_prof.png"));
+		BufferedImage i = ImageIO.read(new File("test/testRessources/dem_prof.png"));
 
 		DiscreteElevationModel dDEM = new HgtDiscreteElevationModel(HGT_FILE);
 		ContinuousElevationModel cDEM = new ContinuousElevationModel(dDEM);

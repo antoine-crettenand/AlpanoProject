@@ -18,7 +18,7 @@ public class LabelizerTest {
 
 	@Test public void visibleSummitsWorksWithExemples() throws Exception {
 
-		File HGT_FILE = new File("N46E007.hgt");
+		File HGT_FILE = new File("ressources/N46E007.hgt");
 		PanoramaParameters PARAMS = PredefinedPanoramas.NIESEN
 				.panoramaParameters();
 
@@ -27,7 +27,7 @@ public class LabelizerTest {
 			ContinuousElevationModel cDEM = new ContinuousElevationModel(dDEM);
 
 			Labelizer label = new Labelizer(cDEM,
-					GazetteerParser.readSummitsFrom(new File("alps.txt")));
+					GazetteerParser.readSummitsFrom(new File("ressources/alps.txt")));
 
 		//	List<Labelizer.SummitWrapper> visibleSummits = label.visibleSummits(PARAMS);
 

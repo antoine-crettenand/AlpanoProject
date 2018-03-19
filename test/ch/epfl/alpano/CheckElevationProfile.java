@@ -14,7 +14,7 @@ import static java.lang.Math.toRadians;
 import static org.junit.Assert.assertEquals;
 
 public class CheckElevationProfile {
-	final static File HGT_FILE = new File("N46E006.hgt");
+	final static File HGT_FILE = new File("ressources/N46E006.hgt");
 	final static double MAX_ELEVATION = 1_500;
 	final static int LENGTH = 111_000;
 	final static double AZIMUTH = toRadians(27.97);
@@ -24,7 +24,7 @@ public class CheckElevationProfile {
 
 	@Test public void checkElevationProfile() throws Exception {
 		BufferedImage i = ImageIO
-				.read(new File("TestRessources/profile_prof.png"));
+				.read(new File("test/testRessources/profile_prof.png"));
 
 		DiscreteElevationModel dDEM = new HgtDiscreteElevationModel(HGT_FILE);
 		ContinuousElevationModel cDEM = new ContinuousElevationModel(dDEM);

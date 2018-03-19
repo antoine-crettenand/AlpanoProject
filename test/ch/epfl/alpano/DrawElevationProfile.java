@@ -13,7 +13,7 @@ import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 import static java.lang.Math.toRadians;
 
 final class DrawElevationProfile {
-	final static File HGT_FILE = new File("TestRessources/N46E006.hgt");
+	final static File HGT_FILE = new File("testRessources/N46E006.hgt");
 	final static double MAX_ELEVATION = 1_500;
 	final static int LENGTH = 111_000;
 	final static double AZIMUTH = toRadians(27.97); //27.97
@@ -41,6 +41,6 @@ final class DrawElevationProfile {
 		}
 		dDEM.close();
 
-		ImageIO.write(i, "png", new File("TestOutput/profile.png"));
+		ImageIO.write(i, "png", new File("testOutput/profile.png"));
 	}
 }

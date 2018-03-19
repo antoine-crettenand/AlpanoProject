@@ -12,7 +12,7 @@ import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 import static java.lang.Math.toRadians;
 
 final class DrawHgtDEM {
-	final static File HGT_FILE = new File("TestRessources/N46E006.hgt");
+	final static File HGT_FILE = new File("testRessources/N46E006.hgt");
 	final static double ORIGIN_LON = toRadians(6.25);
 	final static double ORIGIN_LAT = toRadians(46.25);
 	final static double WIDTH = toRadians(0.5);
@@ -40,6 +40,6 @@ final class DrawHgtDEM {
 		}
 		dDEM.close();
 
-		ImageIO.write(i, "png", new File("TestOutput/dem.png"));
+		ImageIO.write(i, "png", new File("testOutput/dem.png"));
 	}
 }

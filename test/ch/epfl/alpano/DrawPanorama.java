@@ -52,7 +52,7 @@ final class DrawPanorama {
 				}
 			}
 
-			ImageIO.write(i, "png", new File("TestOutput/niesen_prof.png"));
+			ImageIO.write(i, "png", new File("testOutput/niesen_prof.png"));
 		}
 	}
 }

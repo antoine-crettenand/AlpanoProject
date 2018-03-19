@@ -25,7 +25,7 @@ public class GazetteerParserTest {
 	}
 
 	@BeforeClass public static void load() throws IOException {
-		File file = new File("alps.txt");
+		File file = new File("ressources/alps.txt");
 		list = GazetteerParser.readSummitsFrom(file);
 		summits = map(list);
 	}

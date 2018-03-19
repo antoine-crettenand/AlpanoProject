@@ -70,7 +70,8 @@ final class DrawColorPanorama {
 			nextStep("Generate Image");
 
 			Image i = PanoramaRenderer.renderPanorama(p, imagePainter);
-			ImageIO.write(SwingFXUtils.fromFXImage(i, null), "png",new File("TestOutput/PredefinedPanorama-color-profile.png"));
+			ImageIO.write(SwingFXUtils.fromFXImage(i, null), "png",new File(
+					"testOutput/PredefinedPanorama-color-profile.png"));
 			System.out.println((float)(System.currentTimeMillis() - start) / 1000f + " sec");
 		}
 	}
