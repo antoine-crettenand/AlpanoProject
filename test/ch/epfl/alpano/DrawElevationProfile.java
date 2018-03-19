@@ -41,6 +41,6 @@ final class DrawElevationProfile {
 		}
 		dDEM.close();
 
-		ImageIO.write(i, "png", new File("testOutput/profile.png"));
+		ImageIO.write(i, "png", new File("test/testOutput/profile.png"));
 	}
 }

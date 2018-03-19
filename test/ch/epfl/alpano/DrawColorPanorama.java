@@ -23,7 +23,7 @@ import java.io.InputStream;
  */
 
 final class DrawColorPanorama {
-	final static String id = "N46E007";
+	final static String id = "ressources/N46E007";
 	final static File HGT_FILE = new File(id + ".hgt");
 
 	final static PanoramaParameters PARAMS = PredefinedPanoramas.ALPES_DU_JURA.panoramaParameters();
@@ -71,7 +71,7 @@ final class DrawColorPanorama {
 
 			Image i = PanoramaRenderer.renderPanorama(p, imagePainter);
 			ImageIO.write(SwingFXUtils.fromFXImage(i, null), "png",new File(
-					"testOutput/PredefinedPanorama-color-profile.png"));
+					"test/testOutput/PredefinedPanorama-color-profile.png"));
 			System.out.println((float)(System.currentTimeMillis() - start) / 1000f + " sec");
 		}
 	}

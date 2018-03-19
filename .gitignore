@@ -1,0 +1,10 @@
+
+.DS_Store
+.idea/
+production/
+src/ch/epfl/alpano/.DS_Store
+test/.DS_Store
+test/AlpanoProject/
+test/ch/.DS_Store
+test/ch/epfl/.DS_Store
+test/ch/epfl/alpano/.DS_Store

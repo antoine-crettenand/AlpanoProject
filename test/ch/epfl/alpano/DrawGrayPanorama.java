@@ -21,7 +21,7 @@ import java.io.File;
  */
 
 final class DrawGrayPanorama {
-	final static File HGT_FILE = new File("N46E007.hgt");
+	final static File HGT_FILE = new File("ressources/N46E007.hgt");
 
 	final static PanoramaParameters PARAMS = PredefinedPanoramas.NIESEN.panoramaParameters();
 
@@ -48,7 +48,7 @@ final class DrawGrayPanorama {
 			Image i = PanoramaRenderer.renderPanorama(p, l);
 			ImageIO.write(SwingFXUtils.fromFXImage(i, null),
 					"png",
-					new File("niesen-profile.png"));
+					new File("test/testOutput/niesen-profile.png"));
 		}
 	}
 }

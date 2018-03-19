@@ -40,6 +40,6 @@ final class DrawHgtDEM {
 		}
 		dDEM.close();
 
-		ImageIO.write(i, "png", new File("testOutput/dem.png"));
+		ImageIO.write(i, "png", new File("test/testOutput/dem.png"));
 	}
 }

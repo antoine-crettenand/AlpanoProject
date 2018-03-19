@@ -53,7 +53,7 @@ public final class CheckNiesen {
 
 			Image i = PanoramaRenderer.renderPanorama(p, l);
 			ImageIO.write(SwingFXUtils.fromFXImage(i, null), "png",
-					new File("niesen-profile.png"));
+					new File("test/testOutput/niesen-profile.png"));
 
 			BufferedImage img = ImageIO.read(new File("test/testRessources/niesen-profile-prof.png"));
 			BufferedImage target = SwingFXUtils.fromFXImage(i, null);
